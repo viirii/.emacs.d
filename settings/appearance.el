@@ -20,27 +20,29 @@
   (when (file-directory-p path)
     (add-to-list 'custom-theme-load-path path)))
 
+(load-file "~/.emacs.d/themes/zenburn.el")
+
 ;; Default theme
-(defun use-presentation-theme ()
-  (interactive)
-  (when (boundp 'magnars/presentation-font)
-    (set-face-attribute 'default nil :font magnars/presentation-font)))
+;; (defun use-presentation-theme ()
+;;  (interactive)
+;;  (when (boundp 'magnars/presentation-font)
+;;    (set-face-attribute 'default nil :font magnars/presentation-font)))
 
-(defun use-default-theme ()
-  (interactive)
-  (load-theme 'default-black)
-  (when (boundp 'magnars/default-font)
-    (set-face-attribute 'default nil :font magnars/default-font)))
+;; (defun use-default-theme ()
+;;  (interactive)
+;;  (load-theme 'default-black)
+;;  (when (boundp 'magnars/default-font)
+;;    (set-face-attribute 'default nil :font magnars/default-font)))
 
-(defun toggle-presentation-mode ()
-  (interactive)
-  (if (string= (frame-parameter nil 'font) magnars/default-font)
-      (use-presentation-theme)
-    (use-default-theme)))
+;;(defun toggle-presentation-mode ()
+;;  (interactive)
+;;  (if (string= (frame-parameter nil 'font) magnars/default-font)
+;;      (use-presentation-theme)
+;;    (use-default-theme)))
 
-(global-set-key (kbd "C-<f9>") 'toggle-presentation-mode)
+;; (global-set-key (kbd "C-<f9>") 'toggle-presentation-mode)
 
-(use-default-theme)
+;; (use-default-theme)
 
 ;; Don't defer screen updates when performing operations
 (setq redisplay-dont-pause t)

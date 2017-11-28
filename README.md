@@ -8,7 +8,7 @@ You can also see some thoughts behind the settings on my [What the .emacs.d!?](h
 
 To grab all the dependencies:
 
-    git clone --recursive git://github.com/magnars/.emacs.d.git
+    git clone --recursive git://github.com/viirii/.emacs.d.git
 
 The first time you start emacs, it will install some additional packages
 that are best handled by the package manager.

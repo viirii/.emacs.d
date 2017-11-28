@@ -9,7 +9,7 @@
  '(ido-use-filename-at-point nil)
  '(package-selected-packages
    (quote
-    (exec-path-from-shell yasnippet ggtags whitespace-cleanup-mode smart-mode-line dash zenburn-theme rainbow-mode rainbow-delimiters paredit fill-column-indicator company autopair ac-cider)))
+    (cider exec-path-from-shell yasnippet ggtags whitespace-cleanup-mode smart-mode-line dash zenburn-theme rainbow-mode rainbow-delimiters paredit fill-column-indicator company autopair ac-cider)))
  '(safe-local-variable-values
    (quote
     ((eval font-lock-add-keywords nil

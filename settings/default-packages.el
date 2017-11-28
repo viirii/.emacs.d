@@ -155,6 +155,8 @@
   :config (load-theme 'zenburn t))
 (set-face-attribute 'region nil :background "#555")
 
+(set-face-attribute 'default t :font "Monaco")
+
 ;; disable fci to avoid the conflict with htmlize
 ;; (use-package fill-column-indicator
 ;;   :ensure t

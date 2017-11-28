@@ -1,16 +1,14 @@
-(require 'yasnippet)
+;; (add-to-list 'yas-snippet-dirs "~/.emacs.d/yasnippet-snippets")
 
-;; Use only own snippets, do not use bundled ones
-(setq yas-snippet-dirs '("~/.emacs.d/snippets"))
 (yas-global-mode 1)
 
 ;; Include snippets for stuff
-(require 'buster-snippets)
-(require 'angular-snippets)
-(require 'datomic-snippets)
+;; (use-package buster-snippets)
+;; (use-package angular-snippets)
+;; (use-package datomic-snippets)
 
 ;; Jump to end of snippet definition
-(define-key yas-keymap (kbd "<return>") 'yas-exit-all-snippets)
+;; (define-key yas-keymap (kbd "<return>") 'yas-exit-all-snippets)
 
 ;; Inter-field navigation
 (defun yas/goto-end-of-active-field ()
@@ -33,7 +31,7 @@
 (define-key yas-keymap (kbd "C-a") 'yas/goto-start-of-active-field)
 
 ;; No dropdowns please, yas
-(setq yas-prompt-functions '(yas-ido-prompt yas-completing-prompt))
+;; (setq yas-prompt-functions '(yas-ido-prompt yas-completing-prompt))
 
 ;; No need to be so verbose
 (setq yas-verbosity 1)

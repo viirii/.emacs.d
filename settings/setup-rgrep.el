@@ -1,4 +1,3 @@
-(require 'grep)
 (require 's)
 
 (defun rgrep-fullscreen (regexp &optional files dir confirm)

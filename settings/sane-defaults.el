@@ -2,7 +2,7 @@
 (setq x-select-enable-clipboard t)
 
 ;; Auto refresh buffers
-(global-auto-revert-mode 1)
+;; (global-auto-revert-mode 1)
 
 ;; Also auto refresh dired, but be quiet about it
 (setq global-auto-revert-non-file-buffers t)
@@ -60,9 +60,6 @@
 (savehist-mode 1)
 (setq history-length 1000)
 
-;; Undo/redo window configuration with C-c <left>/<right>
-(winner-mode 1)
-
 ;; Never insert tabs
 (set-default 'indent-tabs-mode nil)
 
@@ -98,13 +95,6 @@
 ;; Sentences do not need double spaces to end. Period.
 (set-default 'sentence-end-double-space nil)
 
-;; 80 chars is a good width.
-(set-default 'fill-column 80)
-
-;; Add parts of each file's directory to the buffer name if not unique
-(require 'uniquify)
-(setq uniquify-buffer-name-style 'forward)
-
 ;; A saner ediff
 (setq ediff-diff-options "-w")
 (setq ediff-split-window-function 'split-window-horizontally)
@@ -139,5 +129,8 @@
       (make-directory parent-directory t))))
 
 (add-to-list 'find-file-not-found-functions 'my-create-non-existent-directory)
+
+;; preseve window layout
+(desktop-save-mode 0)
 
 (provide 'sane-defaults)

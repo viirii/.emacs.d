@@ -237,4 +237,3 @@
 ;;               (define-key eshell-mode-map (kbd "<f1>") #'quit-window))))
 
 (provide 'default-packages)
-

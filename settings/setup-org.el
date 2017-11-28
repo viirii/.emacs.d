@@ -68,4 +68,3 @@
 (setq org-export-with-sub-superscripts nil)
 
 (provide 'setup-org)
-

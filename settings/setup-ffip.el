@@ -50,19 +50,18 @@
 
 (setq-default ffip-find-options
               (ffip--create-exclude-find-options
-               '("/node_modules/"
-                 "/bower_components/"
-                 "/target/"
-                 "/out/"
-                 "/tests-out/"
-                 "/overlays/"
-                 "/build/"
-                 "/dist/"
-                 "/vendor/"
-                 ".cask/"
-                 "/generated/"
-                 "/resources/public/js/compiled/"
-                 "/.repl/"
-                 "/.tmp/")))
+               '("/node_modules"
+                 "/bower_components"
+                 "/target"
+                 "/out"
+                 "/overlays"
+                 "/build"
+                 "/dist"
+                 "/vendor"
+                 ".cask"
+                 "/generated"
+                 "/resources/public/js/compiled"
+                 "/.repl"
+                 "/.tmp")))
 
 (provide 'setup-ffip)

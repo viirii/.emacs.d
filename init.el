@@ -88,6 +88,3 @@
 (when (file-exists-p user-settings-dir)
   (mapc 'load (directory-files user-settings-dir nil "^[^#].*el$")))
 
-(global-set-key "\C-z"     'undo)
-(global-set-key "\C-x\C-c" 'undo)
-

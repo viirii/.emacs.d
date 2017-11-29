@@ -9,35 +9,35 @@
  '(ido-use-filename-at-point nil)
  '(package-selected-packages
    (quote
-    (cider exec-path-from-shell yasnippet ggtags whitespace-cleanup-mode smart-mode-line dash zenburn-theme rainbow-mode rainbow-delimiters paredit fill-column-indicator company autopair ac-cider)))
+    (auto-complete cider exec-path-from-shell yasnippet ggtags whitespace-cleanup-mode smart-mode-line dash zenburn-theme rainbow-mode rainbow-delimiters paredit fill-column-indicator company autopair ac-cider)))
  '(safe-local-variable-values
    (quote
     ((eval font-lock-add-keywords nil
-           (quote
-            (("defexamples\\|def-example-group\\| => "
-              (0
-               (quote font-lock-keyword-face)))
-             ("(defexamples[[:blank:]]+\\(.*\\)"
-              (1
-               (quote font-lock-function-name-face))))))
+	   (quote
+	    (("defexamples\\|def-example-group\\| => "
+	      (0
+	       (quote font-lock-keyword-face)))
+	     ("(defexamples[[:blank:]]+\\(.*\\)"
+	      (1
+	       (quote font-lock-function-name-face))))))
      (eval font-lock-add-keywords nil
-           (quote
-            (("defexamples\\|def-example-group\\| => "
-              (0
-               (quote font-lock-keyword-face))))))
+	   (quote
+	    (("defexamples\\|def-example-group\\| => "
+	      (0
+	       (quote font-lock-keyword-face))))))
      (eval when
-           (and
-            (buffer-file-name)
-            (file-regular-p
-             (buffer-file-name))
-            (string-match-p "^[^.]"
-                            (buffer-file-name)))
-           (emacs-lisp-mode))
+	   (and
+	    (buffer-file-name)
+	    (file-regular-p
+	     (buffer-file-name))
+	    (string-match-p "^[^.]"
+			    (buffer-file-name)))
+	   (emacs-lisp-mode))
      (eval font-lock-add-keywords nil
-           (quote
-            (("defexamples\\| => "
-              (0
-               (quote font-lock-keyword-face))))))
+	   (quote
+	    (("defexamples\\| => "
+	      (0
+	       (quote font-lock-keyword-face))))))
      (encoding . utf-8)))))
 
 (custom-set-faces
@@ -47,3 +47,7 @@
  ;; If there is more than one, they won't work right.
  '(js2-error-face ((t nil)) t)
  '(js2-warning-face ((t nil)) t))
+
+(global-set-key "\C-z"     'undo)
+(global-set-key "\C-x\C-c" 'undo)
+

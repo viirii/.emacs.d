@@ -17,6 +17,15 @@
 (add-to-list 'load-path settings-dir)
 (add-to-list 'load-path site-lisp-dir)
 
+ (add-to-list 'package-archives
+   '("melpa-stable" . "http://melpa-stable.milkbox.net/packages/"))
+
+ (add-to-list 'package-archives
+   '("melpa" . "http://melpa.milkbox.net/packages/"))
+
+ (add-to-list 'package-archives
+   '("marmalade" . "http://marmalade-repo.org/packages/"))
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Keep emacs Custom-settings in separate file
 (setq user-emacs-directory "~/.emacs.d/") ;; for Aquamacs
@@ -27,6 +36,7 @@
 (setq user-settings-dir
       (concat user-emacs-directory "users/" user-login-name "@" system-name))
 (add-to-list 'load-path user-settings-dir)
+(load (concat (getenv "HOME") "/analytics/clj/resources/emacs"))
 
 ;; ;; Add external projects to load path
 ;; (dolist (project (directory-files site-lisp-dir t "\\w+"))
@@ -78,5 +88,3 @@
 (when (file-exists-p user-settings-dir)
   (mapc 'load (directory-files user-settings-dir nil "^[^#].*el$")))
 
-(global-set-key "\C-z"     'undo)
-(global-set-key "\C-x\C-c" 'undo)

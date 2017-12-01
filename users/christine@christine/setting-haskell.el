@@ -1,0 +1,1 @@
+(require 'setup-haskell-mode)

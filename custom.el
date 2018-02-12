@@ -56,6 +56,5 @@
  '(js2-error-face ((t nil)) t)
  '(js2-warning-face ((t nil)) t))
 
-(setq Buffer-menu-name-width 40)
 (global-set-key "\C-z"     'undo)
 (global-set-key "\C-x\C-c" 'undo)

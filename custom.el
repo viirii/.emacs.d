@@ -17,7 +17,7 @@
  '(inhibit-startup-screen t)
  '(package-selected-packages
    (quote
-    (kubernetes auto-complete cider exec-path-from-shell yasnippet ggtags whitespace-cleanup-mode smart-mode-line dash zenburn-theme rainbow-mode rainbow-delimiters paredit fill-column-indicator company autopair ac-cider)))
+    (helm-ebdb kubernetes auto-complete cider exec-path-from-shell yasnippet ggtags whitespace-cleanup-mode smart-mode-line dash zenburn-theme rainbow-mode rainbow-delimiters paredit fill-column-indicator company autopair ac-cider)))
  '(safe-local-variable-values
    (quote
     ((eval font-lock-add-keywords nil
@@ -57,4 +57,4 @@
  '(js2-warning-face ((t nil)) t))
 
 (global-set-key "\C-z"     'undo)
-(global-set-key "\C-x\C-c" 'undo)
+(global-set-key "\C-x\C-c" 'project-find-file)

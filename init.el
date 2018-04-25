@@ -80,6 +80,18 @@
 ;; For mac
 (when is-mac (require 'mac))
 
+;; clipboard
+;;(add-to-list 'load-path "~/.emacs.d/elpa/xclip-1.3/")
+;;(require 'xclip)
+;;(xclip-mode 1)
+
+(add-to-list 'load-path "~/.emacs.d/site-lisp/helm/") ; facultative when installed with make install
+(require 'helm-config)
+(global-set-key (kbd "M-x") #'helm-M-x)
+(global-set-key (kbd "C-x r b") #'helm-filtered-bookmarks)
+(global-set-key (kbd "C-x C-f") #'helm-find-files)
+
+
 ;; Elisp go-to-definition with M-. and back again with M-,
 ;; (autoload 'elisp-slime-nav-mode "elisp-slime-nav")
 ;; (add-hook 'emacs-lisp-mode-hook (lambda () (elisp-slime-nav-mode t) (eldoc-mode 1)))

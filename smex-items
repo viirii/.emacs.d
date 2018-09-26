@@ -1,17 +1,30 @@
 
 ;; ----- smex-history -----
 (
- package-reinstall
+ package-list-packages
  package-install
- cd
- 5x5
- arp
- dbx
- dig
+ package-initialize
+ kubemacider-mixpanel-swank
+ cider-restart
+ kubemacider-start-portforward-process
+ cider-jack-in
 )
 
 ;; ----- smex-data -----
 (
- (package-install . 1)
+ (package-install . 4)
  (package-reinstall . 1)
+ (kubemacider-mixpanel-swank . 314)
+ (sort-lines . 7)
+ (kubernetes-describe-dwim . 2)
+ (replace-string . 12)
+ (cider-jack-in . 22)
+ (cider-restart . 8)
+ (customize-variable . 2)
+ (cider-connection-browser . 15)
+ (cider-change-buffers-designation . 15)
+ (cider-connections-make-default . 6)
+ (kubemacider-start-portforward-process . 2)
+ (package-initialize . 1)
+ (package-list-packages . 1)
 )

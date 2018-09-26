@@ -1,8 +1,0 @@
-((("num-subanomaly-to-report" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
-  ("properties-for-event" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
-  ("max-ingested-ms" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
-  ("raw-formatted-subanomalies" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])))

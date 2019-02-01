@@ -92,7 +92,8 @@
 (global-set-key (kbd "C-x C-f") #'helm-find-files)
 
 (add-to-list 'load-path "~/.emacs.d/site-lisp/nyan-mode")
-(require 'nyan-mode)
+(when (require 'nyan-mode nil t)
+  (nyan-mode))
 
 ;; Elisp go-to-definition with M-. and back again with M-,
 ;; (autoload 'elisp-slime-nav-mode "elisp-slime-nav")
@@ -101,4 +102,3 @@
 ;; Conclude init by setting up specifics for the current user
 (when (file-exists-p user-settings-dir)
   (mapc 'load (directory-files user-settings-dir nil "^[^#].*el$")))
-

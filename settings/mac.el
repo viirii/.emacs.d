@@ -1,6 +1,6 @@
 ;; change command to meta, and ignore option to use weird Norwegian keyboard
-(setq mac-option-modifier 'super)
-(setq mac-command-modifier 'meta)
+(setq mac-option-modifier 'meta)
+(setq mac-command-modifier 'super)
 (setq ns-function-modifier 'hyper)
 
 ;; Setup environment variables from the user's shell.

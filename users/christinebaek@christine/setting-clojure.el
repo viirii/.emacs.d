@@ -167,7 +167,7 @@
 (setq cider-lein-parameters "monolith with-all :select :default repl :headless :host ::")
 ; (setq cider-lein-parameters "monolith with-all :select :default with-profile dev repl :headless :host ::")
 
-(cider-add-to-alist 'cider-jack-in-lein-plugins "cider/cider-nrepl" (upcase "0.15.1"))
+(cider-add-to-alist 'cider-jack-in-lein-plugins "cider/cider-nrepl" (upcase "0.21.1"))
 
 ;; show nrepl server port
  (setq nrepl-buffer-name-show-port t)

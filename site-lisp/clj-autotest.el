@@ -1,4 +1,3 @@
-(require 'cider-interaction)
 (require 'ansi-color)
 
 (setq clj-autotest-run-expectations

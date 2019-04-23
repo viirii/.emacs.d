@@ -3,14 +3,14 @@
 (use-package cider :ensure t)
 (use-package clojure-mode :ensure t)
 (use-package company :ensure t)
-(use-package clojure-cheatsheet :ensure t)
+;; (use-package clojure-cheatsheet :ensure t)
 (use-package clojure-snippets :ensure t)
 (use-package clojure-mode-extra-font-locking :ensure t)
 (use-package flycheck-clojure :ensure t)
 ;; (use-package clj-refactor :ensure t)
-(use-package ob-clojure
-  :ensure t
-  :config (setq org-babel-clojure-backend 'cider))
+;;(use-package ob-clojure
+;;  :ensure t
+;;  :config (setq org-babel-clojure-backend 'cider))
 
 ;;; clojure-mode
 (defun my-clojure-mode-hook ()

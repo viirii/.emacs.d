@@ -44,11 +44,11 @@
 ;;   (setf tramp-persistency-file-name
 ;;         (concat temporary-file-directory "tramp-" (user-login-name))))
 
-(use-package framemove
-  :ensure t
-  :config
-  (windmove-default-keybindings)
-  (setq framemove-hook-into-windmove t))
+;;(use-package framemove
+;;  :ensure t
+;;  :config
+;;  (windmove-default-keybindings)
+  ;(setq framemove-hook-into-windmove t))
 
 ;; FIXME : interesting package. Try this : Comint mode is a package that defines a general command-interpreter-in-a-buffer.
 ;; (use-package comint
@@ -126,7 +126,7 @@
   (projectile-global-mode)
   (setq projectile-completion-system 'ivy)
   ;(setq projectile-mode-line '(:eval (format " Projectile[%s]" (projectile-project-name))))
-  (counsel-projectile-on))
+  (counsel-projectile-mode))
 
 (use-package counsel-projectile :ensure t)
 

@@ -1,6 +1,8 @@
 /auto-save-list
 /site-lisp
 /elpa
+elpa/*
+site-lisp/*
 /backups
 /history
 /lastdir

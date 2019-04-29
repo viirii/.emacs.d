@@ -4,10 +4,10 @@
  package-list-packages
  package-install
  package-initialize
- kubemacider-mixpanel-swank
  cider-restart
- kubemacider-start-portforward-process
  cider-jack-in
+ replace-string
+ sort-lines
 )
 
 ;; ----- smex-data -----

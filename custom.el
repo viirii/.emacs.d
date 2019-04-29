@@ -17,7 +17,7 @@
  '(inhibit-startup-screen t)
  '(package-selected-packages
    (quote
-    (magit-popup protobuf-mode dumb-jump wgrep expand-region ace-jump-mode ace-window flycheck-clojure clojure-mode-extra-font-locking clojure-snippets cider cider-decompile ein elpy py-autopep8 jedi nyan-mode helm-ebdb kubernetes auto-complete exec-path-from-shell yasnippet ggtags whitespace-cleanup-mode smart-mode-line dash zenburn-theme rainbow-mode rainbow-delimiters paredit fill-column-indicator company autopair ac-cider)))
+    (helm undo-tree smooth-scrolling smooth-scroll magit-popup protobuf-mode dumb-jump wgrep expand-region ace-jump-mode ace-window flycheck-clojure clojure-mode-extra-font-locking clojure-snippets cider cider-decompile ein elpy py-autopep8 jedi nyan-mode helm-ebdb kubernetes auto-complete exec-path-from-shell yasnippet ggtags whitespace-cleanup-mode smart-mode-line dash zenburn-theme rainbow-mode rainbow-delimiters paredit fill-column-indicator company autopair ac-cider)))
  '(safe-local-variable-values
    (quote
     ((eval font-lock-add-keywords nil

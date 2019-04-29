@@ -1,11 +1,14 @@
 /auto-save-list
 /site-lisp
 /elpa
+auto-save-list/*
 elpa/*
 site-lisp/*
 /backups
 /history
 /lastdir
+ido.last
+init_bash.sh
 ac-comphist.dat
 projectile-bookmarks.eld
 recentf

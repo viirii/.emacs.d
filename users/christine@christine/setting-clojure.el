@@ -3,6 +3,7 @@
  ;; C-x C-m works as the meta key
  (global-set-key "\C-x\C-m" 'execute-extended-command)
 
+(add-to-list 'load-path "~/.emacs.d/site-lisp/kubernetes-el")
 (add-to-list 'load-path "~/.emacs.d/site-lisp/kubemacider")
 (require 'kubemacider)
 

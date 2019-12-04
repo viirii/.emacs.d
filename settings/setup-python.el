@@ -5,11 +5,12 @@
   :ensure t
   :config
   (elpy-enable)
-  (elpy-use-ipython)
   (remove-hook 'elpy-modules 'elpy-module-flymake)
   (add-hook 'elpy-mode-hook 'flycheck-mode)
   (add-hook 'elpy-mode-hook 'py-autopep8-enable-on-save)
   (setq elpy-rpc-backend "jedi")
+  (setq python-shell-interpreter "ipython"
+        python-shell-interpreter-args "-i --simple-prompt")
   (eval-after-load 'elpy
           '(progn
              (define-key elpy-mode-map (kbd "<M-up>") nil)
